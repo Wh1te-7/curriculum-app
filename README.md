@@ -33,6 +33,11 @@
 時間割を簡単に管理できる
 
 URL
+　GitHub
+　https://github.com/Wh1te-7/curriculum-app
+
+　要件定義
+　https://docs.google.com/spreadsheets/d/1Ilasrxka8dZerZO4E9SjOmp8_5yR-HFNZl_fIhVsJCg/edit#gid=282075926
 
 テスト用アカウント
 　メールアドレス
