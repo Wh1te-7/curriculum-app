@@ -1,24 +1,61 @@
-# README
+## usersテーブル
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+| Column             | Type   | Option   |
+| ------------------ | ------ | -------- |
+| email              | string | NOT NULL |
+| encrypted_password | string | NOT NULL |
+| nickname           | string | NOT NULL |
+| birthday           | date   | NOT NULL |
+| college            | string | NOT NULL |
 
-Things you may want to cover:
+### Association
+ - has_many :users
 
-* Ruby version
+## Classesテーブル
 
-* System dependencies
+| Column    | Type       | Option            |
+| --------- | ---------- | ----------------- |
+| title     | string     | NOT NULL          |
+| day_id    | integer    | NOT NULL          |
+| number_id | integer    | NOT NULL          |
+| teacher   | string     | NOT NULL          |
+| text      | text       | NOT NULL          |
+| comment   | text       |                   |
+| user      | references | foreign_key: true |
 
-* Configuration
+### Association
+ - belongs_to :user
 
-* Database creation
+アプリケーション名
+みんなの時間割！
 
-* Database initialization
+アプリケーション概要
+時間割を簡単に管理できる
 
-* How to run the test suite
+URL
 
-* Services (job queues, cache servers, search engines, etc.)
+テスト用アカウント
+　メールアドレス
+　
+　パスワード
+　
+利用方法
+時間割を登録して、自分の好きなようにカスタマイズできる
 
-* Deployment instructions
+目指した課題解決
+学生がわざわざログインしてネットを開き時間割を確認したり、紙を持ち歩き、時間割を確認しないようにするため
 
-* ...
+洗い出した要件
+
+
+GIFと説明
+
+
+実装予定の機能
+フレンド機能
+誰かが時間割を登録したらそれを自分のやつにも登録できる
+小学生、中学生、高校生、大学生と時間割のビューを変えられる
+自分で時間設定ができる
+
+ローカルでの動作方法
+
